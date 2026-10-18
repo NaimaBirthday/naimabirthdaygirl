@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Princess Naima</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-rose">
+    
+<div id="loader"
+     class="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden bg-pink-100 text-center">
+
+    <!-- Floating hearts -->
+    <div class="absolute left-10 top-16 animate-bounce text-3xl">💕</div>
+    <div class="absolute right-10 top-28 animate-pulse text-3xl">✨</div>
+    <div class="absolute bottom-24 left-12 animate-pulse text-3xl">🌸</div>
+    <div class="absolute bottom-20 right-12 animate-bounce text-3xl">💗</div>
+
+    <!-- Anime-inspired illustration -->
+    <div class="mb-5 text-8xl animate-pulse">
+        🎀
+    </div>
+
+    <!-- Birthday message -->
+    <h1 class="px-6 text-3xl font-bold text-pink-600">
+        Happy Birthday, Naima!
+    </h1>
+
+    <p class="mt-4 max-w-xs px-6 text-lg italic font-semibold mb-4">
+        "I am so lucky to be your sister."
+    </p>
+
+    <p class="mt-3 text-sm text-pink-400">
+        You make my world more beautiful ♡
+    </p>
+
+    <!-- Loading bar -->
+    <div class="mt-8 h-2 w-48 overflow-hidden rounded-full bg-white shadow">
+        <div class="h-full w-full origin-left rounded-full bg-pink-500"
+             style="animation: loading 3s linear forwards;">
+        </div>
+    </div>
+
+    <p class="mt-3 text-xs tracking-widest text-pink-400">
+        PREPARING YOUR MAGIC...
+    </p>
+</div>
+<style>
+@keyframes loading {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+</style>
+
+<script>
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+
+        loader.style.display = "none";
+        content.classList.remove("hidden");
+    }, 3000);
+});
+</script>
+
+<!-- Main content: hidden until loading finishes -->
+<main id="content" class="hidden">
+
+
+      <main class="wrap">
+    <h1>10 things I love about you</h1>
+    <div class="grid" id="list"></div>
+  </main>
+  <script src="script.js"></script>
+
+  
+</main>
+
+
+
+
+</body>
+</html>
