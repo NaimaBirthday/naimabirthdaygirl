@@ -40,5 +40,5 @@ window.addEventListener("load", function () {
 
     setTimeout(function () {
         loader.classList.add("hidden");
-    }, 100);
+    }, 3100);
 });
