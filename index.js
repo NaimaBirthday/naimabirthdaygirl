@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
     loader.classList.add("hidden");
     tryAutoplay();
     startFireworks();   // <-- added
-  }, 100);
+  }, 2500);
 });
 
 
@@ -178,3 +178,5 @@ document.addEventListener("pointerdown", function (e) {
   if (!fwRunning) return;
   launchRocket(e.clientX, Math.max(e.clientY - 80, 40));
 });
+
+
