@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #FFF0F5;
+  --color-baby-pink: #FADADD;
+  --color-rose: #D96C93;
+  --color-berry: #8F365A;
+  --color-lavender: #E8DDF8;
+  --color-pearl: #FFF8E7;
+}
+
+
+@keyframes spin-cover {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    animation: spin-cover 3s linear infinite;
+    animation-play-state: running;
+}
+
+.rotating.paused {
+    animation-play-state: paused;
+}
+
+@keyframes loading {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(200%);
+    }
+}
+
+.loader-bar {
+    animation: loading 1.2s ease-in-out infinite;
+}

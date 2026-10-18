@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Princess Naima</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-baby-pink">
+  <div id="loader"
+     class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-baby-pink">
+
+    <div class="text-5xl text-rose animate-pulse">
+        ♥
+    </div>
+
+    <h2 class="mt-4 text-2xl font-bold text-berry">
+        Princess Naima
+    </h2>
+
+    <p class="mt-2 text-sm text-rose">
+        Preparing something special...
+    </p>
+
+    <div class="mt-6 h-2 w-48 overflow-hidden rounded-full bg-white">
+        <div class="h-full w-1/2 rounded-full bg-rose loader-bar"></div>
+    </div>
+
+</div>
+<div class="bg-blush w-9/10 flex flex-col items-center mx-auto mt-16 rounded-2xl mb-8 h-128 md:w-1/2 md:h-full md:pb-8">
+<img src="flower.png" class="w-1/10 absolute" style="left: 1%; top: 7%" alt="">
+<img src="flower.png" class="w-1/10 absolute" style="right: 1%; top: 7%" alt="">
+<div class="w-1/5 shadow-2xl rounded-full mt-8 mb-4">
+<img class="object-fill w-full h-full rounded-full" src="photo1.jpeg" alt="">
+</div>
+<h3 class="text-2xl font-bold text-berry">Happy Birthday</h3>
+<p class="text-rose font-semibold">Princess Naima &#9829;</p>
+<p class="text-rose">-------------------&#9733;-------------------</p>
+<p class="text-gray-700 mx-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur mollitia ipsam delectus, nulla excepturi doloribus placeat quasi temporibus neque officia, ullam voluptates eius iure earum error quod, illo corrupti nemo.</p>
+
+<div class="mx-auto mt-6 flex w-9/10 max-w-xl items-center gap-3 rounded-2xl bg-white p-3 shadow-xl sm:gap-4 sm:p-4 md:gap-5 md:p-5">
+
+  <!-- Song cover -->
+  <img
+    id="songimage"
+    src="songimage.jpeg"
+    class="h-12 w-12 shrink-0 rounded-full object-cover sm:h-14 sm:w-14 md:h-16 md:w-16"
+    alt="Song cover"
+  >
+
+  <!-- Song information -->
+  <div class="min-w-0 flex-1">
+
+    <p class="truncate text-sm font-semibold text-berry sm:text-base md:text-lg">
+      Happy<span class="text-rose"> Birthday</span> Naima
+    </p>
+
+    <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-pink-200 md:mt-3">
+      <div
+        id="progress"
+        class="h-full w-0 rounded-full bg-rose"
+      ></div>
+    </div>
+
+    <div class="mt-1 flex justify-between text-xs text-berry">
+      <span id="playtime">0:00</span>
+    </div>
+
+  </div>
+
+  <!-- Play / pause button -->
+  <button
+    id="btn"
+    type="button"
+    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-rose text-lg font-semibold text-white transition hover:scale-105 hover:bg-berry sm:h-12 sm:w-12 md:h-14 md:w-14 md:text-xl"
+    aria-label="Play"
+  >
+    &#9654;
+  </button>
+
+</div>
+
+
+<audio id="song" src="audio.mp3"></audio>
+<a
+
+  class="rounded-full bg-[#D96C93] px-8 py-4
+         text-base font-semibold text-white
+         shadow-md shadow-pink-200/60
+         transition-all duration-200 ease-in-out
+         hover:bg-[#8F365A] hover:scale-105
+         active:scale-95
+         mt-8
+         "
+
+>
+
+Next Page
+
+</a>
+
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
